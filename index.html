@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şifre Güçlülük Ölçer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <script src="sweetalert2.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>🔒 Şifre Güçlülük Ölçer</h1>
+      <button class="options-icon" id="options-btn" title="Ayarlar">⚙️</button>
+    </header>
+
+    <main class="app-main">
+      <div class="input-group">
+        <textarea id="memorable-input" placeholder="Şifrenizde hatırlayabileceğiniz isim, sayı, şarkı sözü, evcil hayvan adları virgüllü şekilde yazın..."></textarea>
+      </div>
+
+      <button class="action-btn" id="suggest-password">Şifre Öner</button>
+      <div class="suggested-password-container" id="suggested-password-container" style="display: none;">
+        <span id="suggested-password" class="suggested-password"></span>
+        <button class="copy-suggested-btn" id="copy-suggested-btn" title="Kopyala">📋</button>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Şifrenizi girin...">
+        <button class="toggle-btn" id="toggle-password">👁️</button>
+      </div>
+
+      <div class="strength-meter">
+        <div class="strength-bar" id="strength-bar"></div>
+        <p class="strength-text" id="strength-label">Şifre gücünü görmek için yazın</p>
+      </div>
+
+      <button class="action-btn" id="action-btn">Kopyala ve Doldur</button>
+    </main>
+
+    <footer class="app-footer">
+      <p>Güçlü bir şifre için büyük/küçük harf, rakam ve özel karakter kullanın.</p>
+    </footer>
+  </div>
+</body>
+</html>

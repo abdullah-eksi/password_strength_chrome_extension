@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Şifre Güçlülük Ölçer",
+  "description": "Parola yazarken otomatik olarak şifre gücünü ölçer.",
+  "version": "1.0",
+  "author": "Abdullah Ekşi",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Şifre Güçlülük Ölçer"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["sweetalert2.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

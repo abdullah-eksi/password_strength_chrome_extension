@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gemini Token Ayarları</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 min-h-screen flex items-center justify-center">
+  <div class="app-container bg-blue-900 bg-opacity-80 rounded-xl shadow-xl p-8 w-full max-w-md">
+    <header class="app-header mb-6">
+      <h1 class="text-2xl font-bold text-white">Gemini Token Ayarları</h1>
+    </header>
+    <main class="app-main">
+      <div class="input-group mb-4">
+        <div class="relative">
+          <input type="password" id="gemini-token" placeholder="Gemini AI Tokeninizi girin..." class="w-full px-4 py-3 rounded-lg bg-blue-800 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 pr-10">
+          <button type="button" id="toggle-token-visibility" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-blue-300 hover:text-white text-xl focus:outline-none">
+            👁️
+          </button>
+        </div>
+      </div>
+      <div class="input-group mb-4">
+        <label for="api-version" class="block text-white font-semibold mb-2">API Version:</label>
+        <div class="relative">
+          <select id="api-version" class="w-full px-4 py-3 rounded-lg bg-blue-800 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option value="v1beta">v1beta</option>
+            <option value="v1">v1</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-group mb-4">
+        <label for="model-name" class="block text-white font-semibold mb-2">Model:</label>
+        <div class="relative">
+          <select id="model-name" class="w-full px-4 py-3 rounded-lg bg-blue-800 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+            <option value="gemini-2.5-flash">gemini-2.5-flash</option>
+            <option value="gemini-2.5-flash-lite">gemini-2.5-flash-lite</option>
+            <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+            <option value="gemini-2.0-flash-lite">gemini-2.0-flash-lite</option>
+            <option value="gemini-2.0-flash-exp">gemini-2.0-flash-exp</option>
+            <option value="gemini-2.0-flash-lite-001">gemini-2.0-flash-lite-001</option>
+            <option value="gemini-flash-latest">gemini-flash-latest</option>
+            <option value="gemini-1.5-flash">gemini-1.5-flash</option>
+            <option value="gemini-1.5-pro">gemini-1.5-pro</option>
+            <option value="gemini-pro">gemini-pro</option>
+            <option value="gemini-1.0-pro">gemini-1.0-pro</option>
+          </select>
+        </div>
+      </div>
+      <button class="action-btn w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 text-white font-bold mt-4" id="save-token">Kaydet</button>
+    </main>
+    <footer class="app-footer mt-6">
+      <p class="text-blue-200 text-sm">Gemini AI tokeninizi güvenli bir şekilde saklayın.</p>
+    </footer>
+  </div>
+  <script src="options.js"></script>
+  <script src="sweetalert2.min.js"></script>
+</body>
+</html>
